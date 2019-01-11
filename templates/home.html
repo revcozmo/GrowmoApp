@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <h1>Sensor Status</h1>
+          </div>
+        </article>
+        <div class="col-md-4">
+          <div class="content-section">
+            <h3>The Stats</h3>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-light">{{ temp }}</li>
+                <li class="list-group-item list-group-item-light">{{ ph }}</li>
+                <li class="list-group-item list-group-item-light">{{ ec }}</li>
+                <li class="list-group-item list-group-item-light">{{ do }}</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+{% endblock content %}
